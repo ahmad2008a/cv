@@ -1,0 +1,95 @@
+/* تخصيص الحاوية الأساسية للسلايدر */
+.slider-container {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    overflow:hidden;
+    top: 150px;
+}
+
+/* السلايدر نفسه */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* تخصيص كل شريحة داخل السلايدر */
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* تخصيص الصور داخل الشريحة */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* تخصيص مواقع كل سلايدر */
+#slider1 {
+    top:150px;
+    left: 10px;
+    height:400px;
+    width: 520px;
+}
+
+#slider2 {
+    top: 150px;
+    right: 10px;
+    height: 400px;
+    width: 550px;
+    
+}
+
+#slider3 {
+    top: 150px;
+    left: 52%;
+    transform: translateX(-50%);
+    height: 500px;
+    width: 600px;
+}
+
+#slider4 {
+    top:600px;
+    left: 10px;
+    height: 400px;
+    width: 600px;
+}
+
+#slider5 {
+    top:600px;
+    left: 35%;
+    height: 500px;
+    width: 600px;
+}
+#slider6 {
+    top:600px;
+right: 10px;
+    height: 500px;
+    width: 600px;
+}
+
+
+/* تخصيص أزرار التنقل */
+button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* زر العودة إلى الشريحة السابقة */
+.prev {
+    left: 0;
+}
+
+/* زر الانتقال إلى الشريحة التالية */
+.next {
+    right: 0;
+}

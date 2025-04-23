@@ -1,0 +1,448 @@
+<html>
+<title>Golf Park</title>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style ht .css">
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screen.css">
+
+    
+
+
+    
+</head>
+<body style="background-image: url('صور/Gol.webp')">
+
+    <body>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    background-image: url('صور/Golf.webp');
+                    background-size: cover;
+                    background-position: center;
+                    margin: 20px;
+                }
+            </style>
+<nav>
+    <img src="صور الموقع/شعار.png"  class="logo">
+    <a href="golf.html">الصفحة الرئيسية</a>
+    <a href="serves.html">الخدمات</a>
+    <a href="Prices.html">الأسعار</a>
+    <a href="Club facilities.html">مرافق النادي</a>
+    <a href="Contact us.html">اتصل بنا</a>
+</nav>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('صور/Golf.webp');
+        background-size: cover;
+        background-position: center;
+        margin: 20px;
+    }
+    </style>
+    
+</body>
+
+<body>
+    </body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسعار نادي الجولف</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 100px 0 0 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            background: #34495e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .nav a:hover {
+            background: #2c3e50;
+            border-radius: 5px;
+        }
+        .pricing-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .pricing-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #219150;
+        }
+        .payment-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .my-bookings {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .booking-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container { 
+            max-width: 600px; 
+            margin: auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .option { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 10px 0; 
+        }
+        .quantity { 
+            display: flex; 
+            align-items: center; 
+        }
+        .quantity-btn { 
+            padding: 5px 10px; 
+            margin: 0 5px; 
+            background: #34495e; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px; 
+        }
+        .quantity-btn:hover { 
+            background: #2c3e50; 
+        }
+        
+        .footer {
+            background-color: #f8f8f8;
+            padding-top: 900px;
+            width: 98%;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer .site-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+
+        }
+        .footer .topics {
+            display: flex;
+            gap: 50px;
+            color: #000;
+
+        }
+        .footer .topics div {
+            display: flex;
+            flex-direction: column;
+            color: #000;
+
+        }
+        .footer .topics div h4 {
+            margin: 0 0 10px 0;
+            color: #000;
+
+        }
+        .footer .topics div a {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+        }.social-icons i {
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">أسعار الاشتراك في نادي الجولف</div>
+    <div class="nav">
+        <a href="#pricing">الأسعار</a>
+        <a href="#bookings" onclick="showBookings()">حجوزاتي</a>
+    </div>
+    <div id="pricing" class="pricing-container">
+        <div class="pricing-card">
+            <h3>🏌️‍♂️ الجولة الثلاثية</h3>
+            <p class="price">$600</p>
+            <p>
+                🏨 ليلتان في غرفة مزدوجة مع وجبة الإفطار<br>
+                🏌️‍♂️ ثلاث جولات جولف (18 حفرة لكل جولة)<br>
+                🌟 قد تشمل جولة في ملعب "سي فيو" إن وُجدت<br>
+                🚗 تأجير مجاني للعربات<br>
+                🛍️ خصم 20% في متجر المحترفين
+            </p>
+            <button class="btn" onclick="proceedToPayment('خمس جولات الأكثر شمولًا وفخامة', 600)">اشترك الآن</button>
+        </div>
+        <div class="pricing-card">
+            <h3>⛳ خمس جولات الأكثر شمولًا وفخامة</h3>
+            <p class="price">$900</p>
+            <p>
+                🏨 إقامة كاملة لمدة خمس ليالٍ في جناح فاخر<br>
+                🏌️‍♂️ خمس جولات جولف (18 حفرة لكل جولة)<br>
+                🌟 جولة مضمونة في ملعب "سي فيو" الشهير<br>
+                🎓 جلسة تدريب رقمية مجانية
+            </p>
+            <button class="btn" onclick="proceedToPayment('الجولة الثلاثية', 900)">اشترك الآن</button>
+        </div>
+        <div class="pricing-card">
+            <h3>🏖️ استراحة الاستجمام</h3>
+            <p class="price">$300</p>
+            <p>
+                🏨 إقامة ليلة واحدة مع وجبة إفطار كاملة<br>
+                🍽️ عشاء فاخر في أحد مطاعم المنتجع<br>
+                ⛳ الوصول إلى الملاعب (يُطبق رسوم - يستبعد ملعب سي فيو)<br>
+                🏌️‍♂️ تأجير نادي جولف مجاني
+            </p>
+            <button class="btn" onclick="proceedToPayment('استراحة الاستجمام', 300)">اشترك الآن</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>⚡ الحزم المخصصة</h2>
+        <p>✏️ اختر العروض التي تناسبك وسيتغير السعر تلقائيًا.</p>
+        <div class="option">
+            <span>🏨 إقامة ليلة واحدة (+$150)</span>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="changeQuantity('stay', -1)">-</button>
+                <span id="stay">0</span>
+                <button class="quantity-btn" onclick="changeQuantity('stay', 1)">+</button>
+            </div>
+        </div>
+        <div class="option">
+            <span>🏌️‍♂️ جولة جولف (18 حفرة) (+$200)</span>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="changeQuantity('golf', -1)">-</button>
+                <span id="golf">0</span>
+                <button class="quantity-btn" onclick="changeQuantity('golf', 1)">+</button>
+            </div>
+        </div>
+        <div class="option">
+            <span>🚗 تأجير عربة جولف (+$50)</span>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="changeQuantity('cart', -1)">-</button>
+                <span id="cart">0</span>
+                <button class="quantity-btn" onclick="changeQuantity('cart', 1)">+</button>
+            </div>
+        </div>
+        <div class="option">
+            <span>🍽️ عشاء فاخر (+$100)</span>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="changeQuantity('dinner', -1)">-</button>
+                <span id="dinner">0</span>
+                <button class="quantity-btn" onclick="changeQuantity('dinner', 1)">+</button>
+            </div>
+        </div>
+        <h3>💰 السعر الإجمالي: $<span id="totalPrice">0</span></h3>
+        <button class="btn" onclick="proceedToPayment('حزمة مخصصة', calculateTotalPrice())">
+            اشترك الآن
+        </button>
+    </div>
+
+    <div class="payment-container" id="paymentContainer">
+        <h2>إتمام الدفع</h2>
+        <input type="text" id="cardHolder" placeholder="اسم حامل البطاقة" required>
+        <input type="text" id="cardNumber" placeholder="رقم البطاقة" maxlength="16" required>
+        <input type="text" id="expiryDate" placeholder="تاريخ الانتهاء (MM/YY)" maxlength="5" required>
+        <input type="text" id="cvv" placeholder="رمز CVV" maxlength="3" required>
+        <button class="btn" onclick="confirmPayment()">إتمام الدفع</button>
+    </div>
+
+    <div id="bookings" class="my-bookings" style="display: none;">
+        <h3>حجوزاتي</h3>
+        <div id="bookingDetails"></div>
+    </div>
+
+    <script>
+        let prices = { stay: 150, golf: 200, cart: 50, dinner: 100 };
+        let quantities = { stay: 0, golf: 0, cart: 0, dinner: 0 };
+    
+        function changeQuantity(item, change) {
+            if (quantities[item] + change >= 0) {
+                quantities[item] += change;
+                document.getElementById(item).textContent = quantities[item];
+                updateTotalPrice();
+            }
+        }
+    
+        function updateTotalPrice() {
+            let totalPrice = calculateTotalPrice();
+            document.getElementById("totalPrice").textContent = totalPrice;
+        }
+    
+        function calculateTotalPrice() {
+            let totalPrice = 0;
+            for (let item in quantities) {
+                totalPrice += quantities[item] * prices[item];
+            }
+            return totalPrice;
+        }
+    
+        // التعديل هنا لتمرير السعر الخاص بالعرض عند اختياره
+        function proceedToPayment(plan, price) {
+            let totalPrice = calculateTotalPrice(); // حساب السعر الإجمالي بناءً على الاختيارات الحالية
+            if (price) {
+                totalPrice = price; // إذا كان هناك سعر تم تحديده من العرض
+            }
+            let date = prompt("أدخل تاريخ الحجز (YYYY-MM-DD):");
+            let time = prompt("أدخل وقت الحجز (HH:MM):");
+            if (date && time) {
+                localStorage.setItem("plan", plan);
+                localStorage.setItem("price", price);
+                localStorage.setItem("totalPrice", totalPrice); // حفظ السعر الإجمالي
+                localStorage.setItem("date", date);
+                localStorage.setItem("time", time);
+                document.getElementById("paymentContainer").style.display = "block";
+            } else {
+                alert("يرجى إدخال تاريخ ووقت صالحين.");
+            }
+        }
+    
+        function confirmPayment() {
+            let cardHolder = document.getElementById("cardHolder").value;
+            let cardNumber = document.getElementById("cardNumber").value;
+            let expiryDate = document.getElementById("expiryDate").value;
+            let cvv = document.getElementById("cvv").value;
+    
+            if (cardHolder && cardNumber && expiryDate && cvv) {
+                localStorage.setItem("cardHolder", cardHolder);
+                localStorage.setItem("cardNumber", cardNumber);
+                localStorage.setItem("expiryDate", expiryDate);
+                localStorage.setItem("cvv", cvv);
+    
+                alert("تمت عملية الدفع بنجاح!");
+                document.getElementById("paymentContainer").style.display = "none";
+                showBookings();
+            } else {
+                alert("يرجى ملء جميع الحقول.");
+            }
+        }
+    
+        function showBookings() {
+            let plan = localStorage.getItem("plan");
+            let price = localStorage.getItem("price");
+            let totalPrice = localStorage.getItem("totalPrice"); // جلب السعر الإجمالي
+            let date = localStorage.getItem("date");
+            let time = localStorage.getItem("time");
+            let cardHolder = localStorage.getItem("cardHolder");
+    
+            if (plan && price && totalPrice && date && time && cardHolder) {
+                let bookingDetails = `
+                    <div class="booking-card">
+                        <p><strong>اسم المشترك:</strong> ${cardHolder}</p>
+                        <p><strong>الاشتراك:</strong> ${plan}</p>
+                        <p><strong>السعر الإجمالي:</strong> $${totalPrice}</p> <!-- عرض السعر الإجمالي فقط هنا -->
+                        <p><strong>التاريخ والوقت:</strong> ${date}</p>
+                        <p><strong>الوقت:</strong> ${time}</p>
+                    </div>
+                `;
+                document.getElementById("bookingDetails").innerHTML = bookingDetails;
+                document.getElementById("bookings").style.display = "block";
+            } else {
+                document.getElementById("bookingDetails").innerHTML = "<p>لا توجد حجوزات بعد.</p>";
+            }
+        }
+    </script>
+
+    
+    <footer class="footer">
+        <div class="site-name">جميع الحقوق محفوظة© 2025 هول إن ون </div>
+        <div class="topics">
+            <div>
+                <h4>Topic</h4>
+                <a href="golf.html">الصفحة الرئيسية</a>
+                <a href="serves.html">الخدمات</a>
+                <a href="Contact us.html">اتصل بنا</a>
+            </div>
+            <div>
+                <h4>Topic</h4>
+                <a href="Prices.html">الاسعار</a>
+                <a href="Club facilities.html">مرافق النادي</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC1nVX4WOSWy7kB9m5NWl2_g"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

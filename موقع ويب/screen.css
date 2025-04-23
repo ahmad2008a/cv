@@ -1,0 +1,70 @@
+/* الأساسيات */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* تخصيص للمحتوى */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* تصميم الحاوية الأساسية */
+.header, .footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* التصميم الأساسي للعناصر داخل الصفحة */
+.main-content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* تحسينات لتوافق مع الشاشات الصغيرة */
+@media (max-width: 1024px) {
+  .main-content {
+      width: 90%; /* زيادة المساحة لتناسب الأجهزة اللوحية */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .main-content {
+      width: 100%; /* جعل المحتوى يتناسب مع الشاشات الصغيرة */
+  }
+
+  .header, .footer {
+      font-size: 14px;
+  }
+}
+
+/* تحسينات للهواتف الصغيرة */
+@media (max-width: 480px) {
+  .header, .footer {
+      font-size: 12px;
+  }
+
+  .main-content {
+      font-size: 12px;
+      padding: 10px;
+  }
+
+  /* جعل الحاوية كاملة العرض */
+  .container {
+      padding: 5px;
+  }
+}
